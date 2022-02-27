@@ -14,11 +14,6 @@
         "pre": "animation-name: none\nanimation-duration:\nanimation-timing-function: linear | ease-in | ease-out \nanimation-delay:\nanimation-iteration-count: infinite\nanimation-direction: reverse | alternate | alternate-reverse\nanimation-fill-mode: forwards | backwards | both\nanimation-play-state: paused | running",
         "note": "Animations properties and useful values."
     },
-
-
-
-
-
     {
         "title": "Clip-Path Generator",
         "pre": "https://www.cssportal.com/css-clip-path-generator/",
@@ -38,6 +33,10 @@
         "title": "Remove Animations",
         "pre": "*{\n\tanimation-name:none!important;\n} ",
         "note": "Removing animations for responsive designs."
+    },
+    {
+        "title": "Toastify CSS",
+        "pre": ".Toastify__toast--error{\n\tbackground: rgb(219, 0, 0)!important;\n}\n.Toastify__toast-container--top-center{\n\ttop: 40%!important;\n}\n.Toastify__close-button{\n\tdisplay: none!important;\n}",
+        "note": "Overwriting Toastify default CSS"
     }
-
 ]

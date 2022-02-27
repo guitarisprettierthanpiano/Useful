@@ -15,11 +15,11 @@ module.exports = {
 
     entry: "./src/index.tsx",
 
-    mode: "development",
-    devtool: "inline-source-map",
+    // mode: "development",
+    // devtool: "inline-source-map",
 
-    // mode: "production",
-    // devtool: "source-map",
+    mode: "production",
+    devtool: "source-map",
 
     output: {
         filename: "bundle.js",

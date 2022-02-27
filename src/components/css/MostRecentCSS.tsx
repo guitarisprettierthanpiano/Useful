@@ -33,6 +33,7 @@ export const MostRecentCSS: React.FC<Props> = ({}) => {
                 //making pre inside container
                 const newPre: HTMLPreElement = document.createElement('pre')
                 newPre.textContent = data[i].pre
+                newPre.onclick = () => navigator.clipboard.writeText(`${data[i].pre}`)
                 newContainer.appendChild(newPre)
 
                 //making note inside container
@@ -41,7 +42,6 @@ export const MostRecentCSS: React.FC<Props> = ({}) => {
                 newContainer.appendChild(newNote)
             }
             
-            console.log(data)
             return
         }
         catch(error){
