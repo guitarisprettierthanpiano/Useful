@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Meta Tag",
+        "pre": "<Meta \n\tname='description'\n\tcontent=''>",
+        "note": "For boosting lighthouse score."
+    },
+    {
+        "title": "Favicon Error",
+        "pre": "<link rel='shortcut icon' href='#'/>",
+        "note": "This gets rid of the console error for not having a favicon."
+    },
+    {
+        "title": "Favicon Generator",
+        "pre": "https://realfavicongenerator.net/",
+        "note": "An easy way to make favicons from an image."
+    },
+    {
+        "title": "CSS Stylesheet",
+        "pre": "<link rel='stylesheet' href=''>",
+        "note": "Linking a simple CSS stylesheet."
+    },
+    {
+        "title": "Root",
+        "pre": "<div id='root'></div>",
+        "note": "Standard root div."
+    },
+    {
+        "title": "Bundle",
+        "pre": "<script src='./dist/bundle.js'></script>",
+        "note": "Standard bundle script."
+    }
+]
