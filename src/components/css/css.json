@@ -26,17 +26,22 @@
     },
     {
         "title": "Design Responsiveness",
-        "pre": "@media screen and (max-width: 450px){\n\n}",
+        "pre": "@media screen and (max-width: 0px){\n\n}",
         "note": "Template for responsive design."
     },
     {
         "title": "Remove Animations",
-        "pre": "*{\n\tanimation-name:none!important;\n} ",
+        "pre": "*{\n\tanimation-name: none!important;\n} ",
         "note": "Removing animations for responsive designs."
     },
     {
         "title": "Toastify CSS",
         "pre": ".Toastify__toast--error{\n\tbackground: rgb(219, 0, 0)!important;\n}\n.Toastify__toast-container--top-center{\n\ttop: 40%!important;\n}\n.Toastify__close-button{\n\tdisplay: none!important;\n}",
         "note": "Overwriting Toastify default CSS"
+    },
+    {
+        "title": "Spinners",
+        "pre": "https://loading.io/css/",
+        "note": "Nice spinners to easily use in projects."
     }
 ]

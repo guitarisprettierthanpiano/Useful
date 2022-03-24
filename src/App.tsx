@@ -1,6 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import { Header } from './components/Header'
 
 import { MostRecent } from './components/MostRecent'
@@ -10,6 +13,7 @@ import { MostRecentDepen } from './components/dependencies/MostRecentDepen'
 import { MostRecentJS } from './components/js/MostRecentJS'
 import { MostRecentReact } from './components/react/MostRecentReact'
 import { MostRecentRedux } from './components/redux/MostRecentRedux'
+
 
 const App: React.FC = ({}) => {
   return (
@@ -28,6 +32,7 @@ const App: React.FC = ({}) => {
         <Route path='/depen' element={<MostRecentDepen />} />
       </Routes>
     </BrowserRouter>
+    <ToastContainer />
     </>
   )
 }

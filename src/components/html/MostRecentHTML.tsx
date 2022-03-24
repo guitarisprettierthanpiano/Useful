@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { toast, Flip } from 'react-toastify';
 
 interface Props {
 
@@ -33,7 +34,20 @@ export const MostRecentHTML: React.FC<Props> = ({}) => {
                 //making pre inside container
                 const newPre: HTMLPreElement = document.createElement('pre')
                 newPre.textContent = data[i].pre
-                newPre.onclick = () => navigator.clipboard.writeText(`${data[i].pre}`)
+                newPre.onclick = () => {
+                    navigator.clipboard.writeText(`${data[i].pre}`)
+                    toast.success('Copied!', {
+                        position: "top-left",
+                        autoClose: 1500,
+                        hideProgressBar: true,
+                        closeOnClick: false,
+                        pauseOnHover: true,
+                        draggable: false,
+                        progress: undefined,
+                        transition: Flip,
+                        theme: 'colored',
+                    });
+                }
                 newContainer.appendChild(newPre)
 
                 //making note inside container
