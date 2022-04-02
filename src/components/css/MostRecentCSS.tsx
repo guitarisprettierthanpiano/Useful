@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react'
 import { toast, Flip } from 'react-toastify';
 
-interface Props {
+const data = require('./css.json'); 
 
-}
-
-export const MostRecentCSS: React.FC<Props> = ({}) => {
+export const MostRecentCSS: React.FC = () => {
 
     const FetchDataFromJSON = async () => {
         try{
-            const response = await fetch('../src/components/css/css.json');
-            const data = await response.json();
+            // const response = await fetch('/css.json');
+            // const data = await response.json();
 
             const HTMLContent: HTMLDivElement = document.querySelector('.CSS-Content')
             //making the content from the data array of objects.
