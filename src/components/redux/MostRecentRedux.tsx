@@ -1,10 +1,6 @@
 import React from 'react'
 
-interface Props {
-
-}
-
-export const MostRecentRedux: React.FC<Props> = () => {
+export const MostRecentRedux: React.FC = () => {
 
     return(
     <>

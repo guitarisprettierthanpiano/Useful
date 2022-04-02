@@ -1,11 +1,7 @@
 import React from 'react'
 // https://linangdata.com/javascript-tester/
 
-interface Props {
-
-}
-
-export const MostRecentJS: React.FC<Props> = ({}) => {
+export const MostRecentJS: React.FC = () => {
 
     return(
     <>

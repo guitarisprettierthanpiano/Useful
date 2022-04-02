@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css'
 
 import { Header } from './components/Header'
 
-import { MostRecent } from './components/MostRecent'
 import { MostRecentHTML } from './components/html/MostRecentHTML'
 import { MostRecentCSS } from './components/css/MostRecentCSS'
 import { MostRecentDepen } from './components/dependencies/MostRecentDepen'
@@ -22,14 +21,14 @@ const App: React.FC = ({}) => {
       <Header />
 
       <Routes>
-        <Route path='/' element={<MostRecent />} />
-
-        <Route path='/html' element={<MostRecentHTML />} />
-        <Route path='/css' element={<MostRecentCSS />} />
-        <Route path='/js' element={<MostRecentJS />} />
-        <Route path='/react' element={<MostRecentReact />} />
-        <Route path='/redux' element={<MostRecentRedux />} />
-        <Route path='/depen' element={<MostRecentDepen />} />
+        <Route path='useful/' element={<MostRecentHTML />} />
+        <Route path='useful/css' element={<MostRecentCSS />} />
+        <Route path='useful/js' element={<MostRecentJS />} />
+        <Route path='useful/react' element={<MostRecentReact />} />
+        <Route path='useful/redux' element={<MostRecentRedux />} />
+        <Route path='useful/depen' element={<MostRecentDepen />} />
+        <Route index element={<MostRecentHTML />}/>
+        <Route path="*" element={<MostRecentHTML />}/>
       </Routes>
     </BrowserRouter>
     <ToastContainer />

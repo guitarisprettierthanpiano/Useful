@@ -1,47 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-interface Props {
 
-}
-
-export const Header: React.FC<Props> = ({}) => {
+export const Header: React.FC = () => {
 
     return(
     <>
     <div className="header">
 
-        <Link to='/html'>
+        <Link to='useful/'>
             <button>
                 HTML
             </button>
         </Link>
 
-        <Link to='/css'>
+        <Link to='useful/css'>
             <button>
                 CSS
             </button>
         </Link>
 
-        <Link to='/js'>
+        <Link to='useful/js'>
             <button>
                 JS
             </button>
         </Link>
 
-        <Link to='/react'>
+        <Link to='useful/react'>
             <button>
                 React
             </button>
         </Link>
 
-        <Link to='/reddux'>
+        <Link to='useful/redux'>
             <button>
                 Redux
             </button>
         </Link>
 
-        <Link to='/depen'>
+        <Link to='useful/depen'>
             <button>
                 Dependencies
             </button>

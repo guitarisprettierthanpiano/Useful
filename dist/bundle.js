@@ -4186,7 +4186,6 @@ const react_router_dom_1 = __webpack_require__(879);
 const react_toastify_1 = __webpack_require__(249);
 __webpack_require__(369);
 const Header_1 = __webpack_require__(370);
-const MostRecent_1 = __webpack_require__(738);
 const MostRecentHTML_1 = __webpack_require__(817);
 const MostRecentCSS_1 = __webpack_require__(69);
 const MostRecentDepen_1 = __webpack_require__(431);
@@ -4198,13 +4197,14 @@ const App = ({}) => {
         react_1.default.createElement(react_router_dom_1.BrowserRouter, null,
             react_1.default.createElement(Header_1.Header, null),
             react_1.default.createElement(react_router_dom_1.Routes, null,
-                react_1.default.createElement(react_router_dom_1.Route, { path: '/', element: react_1.default.createElement(MostRecent_1.MostRecent, null) }),
-                react_1.default.createElement(react_router_dom_1.Route, { path: '/html', element: react_1.default.createElement(MostRecentHTML_1.MostRecentHTML, null) }),
-                react_1.default.createElement(react_router_dom_1.Route, { path: '/css', element: react_1.default.createElement(MostRecentCSS_1.MostRecentCSS, null) }),
-                react_1.default.createElement(react_router_dom_1.Route, { path: '/js', element: react_1.default.createElement(MostRecentJS_1.MostRecentJS, null) }),
-                react_1.default.createElement(react_router_dom_1.Route, { path: '/react', element: react_1.default.createElement(MostRecentReact_1.MostRecentReact, null) }),
-                react_1.default.createElement(react_router_dom_1.Route, { path: '/redux', element: react_1.default.createElement(MostRecentRedux_1.MostRecentRedux, null) }),
-                react_1.default.createElement(react_router_dom_1.Route, { path: '/depen', element: react_1.default.createElement(MostRecentDepen_1.MostRecentDepen, null) }))),
+                react_1.default.createElement(react_router_dom_1.Route, { path: 'useful/', element: react_1.default.createElement(MostRecentHTML_1.MostRecentHTML, null) }),
+                react_1.default.createElement(react_router_dom_1.Route, { path: 'useful/css', element: react_1.default.createElement(MostRecentCSS_1.MostRecentCSS, null) }),
+                react_1.default.createElement(react_router_dom_1.Route, { path: 'useful/js', element: react_1.default.createElement(MostRecentJS_1.MostRecentJS, null) }),
+                react_1.default.createElement(react_router_dom_1.Route, { path: 'useful/react', element: react_1.default.createElement(MostRecentReact_1.MostRecentReact, null) }),
+                react_1.default.createElement(react_router_dom_1.Route, { path: 'useful/redux', element: react_1.default.createElement(MostRecentRedux_1.MostRecentRedux, null) }),
+                react_1.default.createElement(react_router_dom_1.Route, { path: 'useful/depen', element: react_1.default.createElement(MostRecentDepen_1.MostRecentDepen, null) }),
+                react_1.default.createElement(react_router_dom_1.Route, { index: true, element: react_1.default.createElement(MostRecentHTML_1.MostRecentHTML, null) }),
+                react_1.default.createElement(react_router_dom_1.Route, { path: "*", element: react_1.default.createElement(MostRecentHTML_1.MostRecentHTML, null) }))),
         react_1.default.createElement(react_toastify_1.ToastContainer, null)));
 };
 exports["default"] = App;
@@ -4223,44 +4223,23 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Header = void 0;
 const react_1 = __importDefault(__webpack_require__(294));
 const react_router_dom_1 = __webpack_require__(879);
-const Header = ({}) => {
+const Header = () => {
     return (react_1.default.createElement(react_1.default.Fragment, null,
         react_1.default.createElement("div", { className: "header" },
-            react_1.default.createElement(react_router_dom_1.Link, { to: '/html' },
+            react_1.default.createElement(react_router_dom_1.Link, { to: 'useful/' },
                 react_1.default.createElement("button", null, "HTML")),
-            react_1.default.createElement(react_router_dom_1.Link, { to: '/css' },
+            react_1.default.createElement(react_router_dom_1.Link, { to: 'useful/css' },
                 react_1.default.createElement("button", null, "CSS")),
-            react_1.default.createElement(react_router_dom_1.Link, { to: '/js' },
+            react_1.default.createElement(react_router_dom_1.Link, { to: 'useful/js' },
                 react_1.default.createElement("button", null, "JS")),
-            react_1.default.createElement(react_router_dom_1.Link, { to: '/react' },
+            react_1.default.createElement(react_router_dom_1.Link, { to: 'useful/react' },
                 react_1.default.createElement("button", null, "React")),
-            react_1.default.createElement(react_router_dom_1.Link, { to: '/reddux' },
+            react_1.default.createElement(react_router_dom_1.Link, { to: 'useful/redux' },
                 react_1.default.createElement("button", null, "Redux")),
-            react_1.default.createElement(react_router_dom_1.Link, { to: '/depen' },
+            react_1.default.createElement(react_router_dom_1.Link, { to: 'useful/depen' },
                 react_1.default.createElement("button", null, "Dependencies")))));
 };
 exports.Header = Header;
-
-
-/***/ }),
-
-/***/ 738:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.MostRecent = void 0;
-const react_1 = __importDefault(__webpack_require__(294));
-const react_router_dom_1 = __webpack_require__(879);
-const MostRecent = ({}) => {
-    return (react_1.default.createElement("div", { className: "most-recent-container" },
-        react_1.default.createElement(react_router_dom_1.Link, { to: '/' },
-            react_1.default.createElement("button", null, "mnfrwioenruio4n4utu9"))));
-};
-exports.MostRecent = MostRecent;
 
 
 /***/ }),
@@ -4369,7 +4348,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MostRecentDepen = void 0;
 const react_1 = __importDefault(__webpack_require__(294));
-const MostRecentDepen = ({}) => {
+const MostRecentDepen = () => {
     return (react_1.default.createElement(react_1.default.Fragment, null, "2342456rtegf"));
 };
 exports.MostRecentDepen = MostRecentDepen;
@@ -4404,7 +4383,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MostRecentHTML = void 0;
 const react_1 = __importStar(__webpack_require__(294));
 const react_toastify_1 = __webpack_require__(249);
-const MostRecentHTML = ({}) => {
+const MostRecentHTML = () => {
     const FetchDataFromJSON = async () => {
         try {
             const response = await fetch('../src/components/html/html.json');
@@ -4481,7 +4460,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MostRecentJS = void 0;
 const react_1 = __importDefault(__webpack_require__(294));
-const MostRecentJS = ({}) => {
+// https://linangdata.com/javascript-tester/
+const MostRecentJS = () => {
     return (react_1.default.createElement(react_1.default.Fragment, null, "234y545y45"));
 };
 exports.MostRecentJS = MostRecentJS;
@@ -4499,7 +4479,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MostRecentReact = void 0;
 const react_1 = __importDefault(__webpack_require__(294));
-const MostRecentReact = ({}) => {
+const MostRecentReact = () => {
     return (react_1.default.createElement(react_1.default.Fragment, null, "qe3w32e"));
 };
 exports.MostRecentReact = MostRecentReact;

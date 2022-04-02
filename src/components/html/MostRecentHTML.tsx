@@ -1,16 +1,12 @@
 import React, { useEffect } from 'react'
 import { toast, Flip } from 'react-toastify';
 
-interface Props {
-
-}
-
-export const MostRecentHTML: React.FC<Props> = ({}) => {
+export const MostRecentHTML: React.FC = () => {
 
     const FetchDataFromJSON = async () => {
         try{
             const response = await fetch('../src/components/html/html.json');
-            const data = await response.json();
+            const data = await response.json(); 
 
             const HTMLContent: HTMLDivElement = document.querySelector('.HTML-Content')
             //making the content from the data array of objects.
