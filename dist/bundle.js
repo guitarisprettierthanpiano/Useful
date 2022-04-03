@@ -4500,6 +4500,7 @@ const data = __webpack_require__(211);
 const MostRecentReact = () => {
     const FetchDataFromJSON = async () => {
         try {
+            console.log(data);
             const ReactContent = document.querySelector('.React-Content');
             //making the content from the data array of objects.
             for (let i = 0; i < data.length; i++) {

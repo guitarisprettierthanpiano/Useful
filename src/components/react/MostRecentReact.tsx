@@ -7,6 +7,7 @@ export const MostRecentReact: React.FC = () => {
 
     const FetchDataFromJSON = async () => {
         try{
+            console.log(data)
             const ReactContent: HTMLDivElement = document.querySelector('.React-Content')
             //making the content from the data array of objects.
             for (let i:number = 0; i < data.length; i++){
