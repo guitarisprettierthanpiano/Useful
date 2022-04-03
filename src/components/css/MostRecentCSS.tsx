@@ -7,17 +7,14 @@ export const MostRecentCSS: React.FC = () => {
 
     const FetchDataFromJSON = async () => {
         try{
-            // const response = await fetch('/css.json');
-            // const data = await response.json();
-
-            const HTMLContent: HTMLDivElement = document.querySelector('.CSS-Content')
+            const CSSContent: HTMLDivElement = document.querySelector('.CSS-Content')
             //making the content from the data array of objects.
             for (let i:number = 0; i < data.length; i++){
                 //making container for right side
                 const newContainer: HTMLDivElement = document.createElement('div')
                 newContainer.classList.add(`CSS-Item-${i}`)
                 newContainer.classList.add('CSS-Item')
-                HTMLContent.appendChild(newContainer)
+                CSSContent.appendChild(newContainer)
 
                 //adding element to list on left
                 const newLI: HTMLLIElement = document.createElement('li')

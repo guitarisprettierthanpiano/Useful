@@ -27,6 +27,6 @@
     {
         "title": "Bundle",
         "pre": "<script src='./dist/bundle.js'></script>",
-        "note": "Standard bundle script."
+        "note": "Standard bundle script. I think body is better than head but not 110% certain."
     }
 ]

@@ -61,7 +61,7 @@ export const MostRecentHTML: React.FC = () => {
         }
     }
     
-    //fetch on initial
+    //generate the stuff on page load
     useEffect(() => {
         FetchDataFromJSON()
     },[])

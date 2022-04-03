@@ -1,7 +1,17 @@
 [
     {
-        "title": "Toast Container",
-        "pre": "import { ToastContainer } from 'react-toastify'\n<ToastContainer />",
-        "note": "Toast Note"
+        "title": "New React v18 index",
+        "pre": "const root = ReactDOM.createRoot(document.getElementById(\"root\") as HTMLElement);\n\nroot.render(\n\t<React.StrictMode>\n\t\t<App />\n\t</React.StrictMode>\n)",
+        "note": "The new way to do root in index.(tsx|ts|js|jsx)"
+    },
+    {
+        "title": "React-Router-Dom HashRouter Way",
+        "pre": "<HashRouter>\n\t<Routes>\n\t\t<Route path='/' element={</>}/>\n\t\t<Route index element={</>}/>\n\t\t<Route path=\"*\" element={</>}/>\n\t</Routes>\n</HashRouter>",
+        "note": "Webpack doesn't like BrowserRouter so I use this with webpack. index element means default on page load. * means a bad route."
+    },
+    {
+        "title": "React-Router-Dom BrowserRouter Way",
+        "pre": "<BrowserRouter>\n\t<Routes>\n\t\t<Route path='/' element={</>}/>\n\t\t<Route index element={</>}/>\n\t\t<Route path=\"*\" element={</>}/>\n\t</Routes>\n</BrowserRouter>",
+        "note": "This is the standard way without webpack."
     }
 ]

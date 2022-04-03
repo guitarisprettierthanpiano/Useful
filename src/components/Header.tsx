@@ -8,37 +8,37 @@ export const Header: React.FC = () => {
     <>
     <div className="header">
 
-        <Link to='useful/'>
+        <Link to='/'>
             <button>
                 HTML
             </button>
         </Link>
 
-        <Link to='useful/css'>
+        <Link to='/css'>
             <button>
                 CSS
             </button>
         </Link>
 
-        <Link to='useful/js'>
+        <Link to='/js'>
             <button>
                 JS
             </button>
         </Link>
 
-        <Link to='useful/react'>
+        <Link to='/react'>
             <button>
                 React
             </button>
         </Link>
 
-        <Link to='useful/redux'>
+        <Link to='/redux'>
             <button>
                 Redux
             </button>
         </Link>
 
-        <Link to='useful/depen'>
+        <Link to='/depen'>
             <button>
                 Dependencies
             </button>
