@@ -4192,7 +4192,7 @@ const MostRecentDepen_1 = __webpack_require__(431);
 const MostRecentJS_1 = __webpack_require__(181);
 const MostRecentReact_1 = __webpack_require__(355);
 const MostRecentRedux_1 = __webpack_require__(161);
-const App = ({}) => {
+const App = () => {
     return (react_1.default.createElement(react_1.default.Fragment, null,
         react_1.default.createElement(react_router_dom_1.HashRouter, null,
             react_1.default.createElement(Header_1.Header, null),

@@ -13,12 +13,11 @@ import { MostRecentReact } from './components/react/MostRecentReact'
 import { MostRecentRedux } from './components/redux/MostRecentRedux'
 
 
-const App: React.FC = ({}) => {
+const App: React.FC = () => {
   return (
     <>
     <HashRouter>
       <Header />
-
       <Routes>
         <Route path='/' element={<MostRecentHTML />} />
         <Route path='/css' element={<MostRecentCSS />} />
@@ -26,8 +25,8 @@ const App: React.FC = ({}) => {
         <Route path='/react' element={<MostRecentReact />} />
         <Route path='/redux' element={<MostRecentRedux />} />
         <Route path='/depen' element={<MostRecentDepen />} />
-        <Route index element={<MostRecentHTML />}/>
-        <Route path="*" element={<MostRecentHTML />}/>
+        <Route index element={<MostRecentHTML />} />
+        <Route path="*" element={<MostRecentHTML />} />
       </Routes>
     </HashRouter>
 
