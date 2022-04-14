@@ -5,7 +5,7 @@
         "note": "Removing all borders and marins. Defaulting Box-Sizing."
     },
     {
-        "title": "#Root Max-Width",
+        "title": "Page Width",
         "pre": "#root{\n\tmax-width: 100vw;\n}",
         "note": "Important to prevent x-overflow."
     },
@@ -40,7 +40,7 @@
         "note": "Overwriting Toastify default CSS"
     },
     {
-        "title": "Spinners",
+        "title": "Loading Spinners",
         "pre": "https://loading.io/css/",
         "note": "Nice spinners to easily use in projects."
     }
